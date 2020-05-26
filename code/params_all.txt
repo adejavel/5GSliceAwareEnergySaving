@@ -1,0 +1,50 @@
+%Border is the square width in meters
+border = 300;
+% Lambda is the PPP density
+lambda = 5e-4;
+mean_antennas = lambda*border^2;
+% K is the Simulated annealing number of temperature steps
+K = mean_antennas;
+% L is the step length
+L = 300;
+% dp is the power variation
+dp = 0.1;
+DP = dp;
+% p_init is the initial probability to accept power increase
+p_init = 0.95;
+% p_end is the ending probability to accept power increase
+p_end = 0.01;
+% base_emission_power is the initial base stations emission power
+base_emission_power = 10;
+% number of simulations
+num_sim = 10000;
+min_power = 0.2;
+
+global_result = [];
+
+
+
+
+% lte_threshold is the reception threshold for a LTE UE in W
+% band is the lte band used by the antenna
+% gamma is the path loss exponent
+% c is the celerity
+% bandwidth is the bandwidth of the antenna
+
+lte_threshold = 1e-12;
+band = 3.5e9;
+gamma = 4;
+c = 3e8;
+bandwidth = 0.4e9;
+% nb_circles is the number of sub-rings that will be studied while
+% determining the capacity radius of each cell
+nb_circles = 1000;
+
+radio_params = [lte_threshold band gamma c bandwidth nb_circles];
+
+% slices requirements. 
+densities = [ 1e-4 1e-1 2e-2];
+active_proportions = [ 0.1 0.05 0.1];
+capacity_per_users = [ 100e6 1e3 10e3];
+latency_criticity = [0 0 2];
+k_connectivity = [1 1 3] ;
