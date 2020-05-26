@@ -1,4 +1,4 @@
-# Slice-aware energy saving algorithm for 5G networks based on simplicial homology
+# Slice-aware energy saving algorithm for 5G networks based on simplicial homology: Simulations and code repository
 
 This repository contains the code of the simulations done for paper: "Slice-aware energy saving algorithm for 5G networks based on simplicial homology". It also contains detailed diagrams for simulations
 
