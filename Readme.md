@@ -3,8 +3,8 @@
 This repository contains the code of the simulations done for paper: "Slice-aware energy saving algorithm for 5G networks based on simplicial homology". It also contains detailed diagrams for simulations
 
 ## Content
-* The code and parameters can be found in the folder `code`.
-* The simulations diagrams can be found in the folder `simulations`.
+* The code and parameters can be found in the folder [code](code).
+* The simulations diagrams can be found in the folder [Technical report](TechnicalReport).
 
 
 ## Execution
